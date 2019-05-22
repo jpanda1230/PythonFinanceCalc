@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+  margin:25px 200px 75px 200px;
+}
+
+form{
+	margin-top : 0px;
+}
+
+h3 {
+    font-size:30px;;
+}
+</style>
+<body>
+
+<h3 align="center">Please input Five Data:</h3>
+
+<div>
+  <form action="/forward/" style="bottom:200px; top:20px;" method = "post">
+    <label for="fname">Number of Funerals Per Year</label>
+    <input type="text" id="fname" name="text1" placeholder="1..">
+
+    <label for="lname">Fixed Costs(Overheads)</label>
+    <input type="text" id="lname" name="text2" placeholder="2..">
+
+    <label for="lname">Time Spent per funeral</label>
+    <input type="text" id="lname" name="text3" placeholder="3..">
+	
+	<label for="lname">Wages</label>
+    <input type="text" id="lname" name="text4" placeholder="4..">
+	
+	<label for="lname">Vehicle & Fuel</label>
+    <input type="text" id="lname" name="text5" placeholder="5..">
+  
+    <input type="submit" value="Submit" name ="output-form">
+</form>
+  </form>
+</div>
+
+</body>
+</html>
